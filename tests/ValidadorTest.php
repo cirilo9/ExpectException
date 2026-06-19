@@ -72,5 +72,17 @@ class ValidadorTest extends TestCase
         
         $this->validador->validarPassword("SoloLetrasYMasLetras");
     }
-   
+   //V.	CONCLUSIONES
+    //1.	¿Qué diferencia hay entre expectException y expectExceptionMessage?
+    //  expectException() valida el tipo de excepción y expectExceptionMessage() valida el mensaje que muestra.
+
+    //2.	¿Por qué es importante colocar expectException ANTES de ejecutar el código?
+    // Porque PHPUnit debe saber que espera una excepción antes de que ocurra.
+
+    //3.	¿Qué pasa si una función debe lanzar una excepción, pero no lo hace?
+    // La prueba falla, ya que se esperaba un error y no ocurrió.
+
+    //4.	¿En qué situaciones de un proyecto real usarías expectException?
+     //Al validar datos incorrectos, accesos no permitidos o cualquier caso donde se deba generar un error controlado.
+
 }
